@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat & display = swap');
+
+head {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    color:  #fff;
+}
+
+
+.header {
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 80%;
+    z-index: 2;
+    padding: 2rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.menu {
+    cursor: 3rem;
+}
+
+.linel, .linel2 {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    pointer-events: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+}
+
+.navbar-list {
+    font-size: 3rem;
+    padding-top: 3rem;
+    flex-basis: 30rem;
+    list-style: none;
+}
+
+.navbar-list h3{
+    padding-bottom: 3rem;
+}
+
+.navbar-info {
+    flex-basis: 30rem;
+}
+
+.navbar-list h2{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+
+.navbar-list p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.slide {
+    min-height: 100vh;
+    margin: 0 auto;
+    will-change: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.slide-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 25rem;
+    padding-right: 5rem;
+    position: relative;
+}
+
+
+
+.slide-img {
+    position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.slide-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-title::after {
+    content: '';
+    display: block;
+    margin-top: 0.5rem;
+    width: 40px;
+    height: 4px;
+}
+
+.slide-title h2 {
+    font-size: 3rem;
+}
+
+.slide-desc ul {
+    list-style: inside;
+    padding: 3rem;
+}
+
+.slide-desc li {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.slide.javascript h2 {
+    background: -webkit-linear-gradient(90deg, #F85900 -39%, #F9D423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.slide.javascript .slide-title::after {
+    background: linear-gradient(90deg, #F85900 -39%, #F9D423 100%);
+
+}
+
+.slide.git h2{
+    background: -webkit-linear-gradient(90deg, #DC2D61 0%, #DF1444 52%, #FF3535 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.git .slide-title::after {
+    background: linear-gradient(90deg, #DC2D61 0%, #DF1444 52%, #FF3535 100%);
+}
+
+
+.slide.react h2 {
+    background: -webkit-linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.react .slide-title::after {
+    background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+}
+
+
+.slide.node h2{
+    background: -webkit-linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.node .slide-title::after {
+    background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%);
+}
+
+.slide.soft h2{
+    background: -webkit-linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.soft .slide-title::after {
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+}
+
+.slide-img-reveal,
+.slide-text-reveal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent;
+}
+
+
+
